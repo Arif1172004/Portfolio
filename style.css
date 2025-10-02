@@ -384,4 +384,81 @@ footer {
   margin-bottom: 10px;
   color: #fff;
   text-align: center;
+
+}
+
+/* --- Media Queries for Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    
+    /* Navbar ko stack karo */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; /* Logo ko left align karein */
+        padding: 10px 20px;
+    }
+
+    /* Nav Links ko chota karo aur center karo */
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%; /* Puri width lo */
+        text-align: center;
+    }
+
+    .nav-links a {
+        padding: 5px 0;
+        display: block;
+    }
+
+    /* Download CV Button ko bottom ya top pe le jao */
+    .nav-btn {
+        margin-left: 0;
+        margin-top: 10px;
+        align-self: center; /* Button ko center karo */
+        width: 90%; /* Puri width lo */
+        text-align: center;
+    }
+
+    /* Logo ko chota karo */
+    .logo {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ... Navbar changes are here ... */
+
+    /* About Section ko stack karo */
+    #about .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image {
+        width: 90%; /* Image ko chota karo */
+        max-width: 280px; /* Lekin ek limit tak */
+        height: auto;
+    }
+
+    .about-text {
+        max-width: 90%;
+        padding: 0 10px;
+    }
+
+    .social-box {
+        padding: 15px;
+    }
+    
+    .social-box a {
+        font-size: 2rem; /* Icons ko chota karo */
+    }
+
+    /* Scrolling text ko slow karo agar zaruri ho to */
+    .scrolling-text {
+        animation-duration: 30s; 
+    }
 }
